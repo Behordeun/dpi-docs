@@ -130,4 +130,4 @@ async def receive_sms(request: Request):
 
 ## 🤝 Contributors
 
-This module was curated by solution architects working on DPI implementations across Africa.
+This module was curated by solution architects working on DPI implementations across Nigeria.

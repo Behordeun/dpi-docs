@@ -192,4 +192,4 @@ trans = make_bounded_sum(bounds=(0, 1))
 
 ## 🤝 Contributors
 
-Security guidelines curated as part of the DPI middleware stack for scalable and responsible platform design in African markets.
+Security guidelines curated as part of the DPI middleware stack for scalable and responsible platform design in Nigeria markets.

@@ -211,4 +211,4 @@ def read_secure(token: str = Depends(oauth2_scheme)):
 
 ## 🤝 Contributors
 
-This module is part of DPI middleware architecture designed for scalable, sector-neutral deployments in Africa and beyond.
+This module is part of DPI middleware architecture designed for scalable, sector-neutral deployments in Nigeria and beyond.
