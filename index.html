@@ -2,23 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DPI Middleware Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DPI Middleware Documentation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; }
-    h1 { color: #2c3e50; }
-    a { text-decoration: none; color: #2980b9; }
-    a:hover { text-decoration: underline; }
-    ul { padding-left: 20px; }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f5f7fa;
+      color: #2c3e50;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+    h1 {
+      color: #1a1a1a;
+      text-align: center;
+      font-weight: 600;
+    }
+    p.description {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 1rem 0;
+    }
+    a.doc-link {
+      display: block;
+      background-color: #e8f0fe;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid #1a73e8;
+      text-decoration: none;
+      border-radius: 6px;
+      color: #1a1a1a;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    a.doc-link:hover {
+      background-color: #d2e3fc;
+      transform: translateX(5px);
+    }
+    .footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #999;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1>📘 DPI Middleware Documentation</h1>
-  <p>Select a component to view its documentation:</p>
-  <ul>
-    <li><a href="https://github.com/your-username/dpi-docs/blob/main/docs/data-consent.md" target="_blank">📜 Data Consent</a></li>
-    <li><a href="https://github.com/your-username/dpi-docs/blob/main/docs/microservice-delivery.md" target="_blank">🚀 Microservice Delivery</a></li>
-    <li><a href="https://github.com/your-username/dpi-docs/blob/main/docs/security.md" target="_blank">🔐 Security</a></li>
-    <li><a href="https://github.com/your-username/dpi-docs/blob/main/docs/third-party-platforms.md" target="_blank">🌐 Third-party Platforms</a></li>
-  </ul>
+  <div class="container">
+    <h1>📘 DPI Middleware Documentation</h1>
+    <p class="description">Explore the components of the Digital Public Infrastructure stack, curated for scalability, security, and inclusive innovation.</p>
+    <ul>
+      <li><a class="doc-link" href="https://github.com/Behordeun/dpi-docs/blob/main/docs/data-consent.md" target="_blank">📜 Data Consent — Capture, enforce and manage user permissions</a></li>
+      <li><a class="doc-link" href="https://github.com/Behordeun/dpi-docs/blob/main/docs/microservice-delivery.md" target="_blank">🚀 Microservice Delivery — APIs, workflows, and schedulers</a></li>
+      <li><a class="doc-link" href="https://github.com/Behordeun/dpi-docs/blob/main/docs/security.md" target="_blank">🔐 Security — Encryption, privacy and policy enforcement</a></li>
+      <li><a class="doc-link" href="https://github.com/Behordeun/dpi-docs/blob/main/docs/third-party-platforms.md" target="_blank">🌐 Third-party Platforms — Messaging, payments, identity & more</a></li>
+    </ul>
+    <div class="footer">
+      Maintained by Data Science Nigeria — For DPI builders across Nigeria 🌍
+    </div>
+  </div>
 </body>
 </html>
