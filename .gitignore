@@ -37,3 +37,6 @@ Thumbs.db
 *.rej
 .DS_Store
 .github/copilot-instructions.md
+.qodo
+.vscode
+.history
