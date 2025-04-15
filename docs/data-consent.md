@@ -9,7 +9,7 @@ This will cover:
 1. [Overview](#overview)
 2. [Components](#-components)
    1. [OpenMined – PySyft (Consent Protocol)](#1-openmined--pysyft-consent-protocol)
-   2. [VAS2NET – Voice IVR and SMS-based Consent](#vas2net-voice-ivr-and-sms-based-consent)
+   2. [VAS2NET – Voice IVR and SMS-based Consent](#2-vas2net-voice-ivr-and-sms-based-consent)
 3. [Architecture Integration](#-architecture-integration)
 4. [Cross-Language Support](#-cross-language-support)
 5. [Security & Compliance Considerations](#-security--compliance-considerations)
@@ -29,7 +29,7 @@ This will cover:
 - **Integration**: Backend microservices, ML platforms, or standalone APIs.
 - **Language Support**: Primarily Python; access via HTTP APIs for other stacks (Java, .NET, Go).
 
-### VAS2NET – Voice IVR / SMS Gateway
+### 2. VAS2NET – Voice IVR / SMS Gateway
 
 - **Purpose**: Capture consent via **mobile phones** using USSD, IVR, or SMS (inclusive of rural demographics).
 - **Integration**: Expose REST endpoints for integration with microservices or orchestration layers.
