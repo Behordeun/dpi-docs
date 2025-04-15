@@ -97,15 +97,44 @@ client.api.store({
 ### SMS Consent Handler
 
 ```python
-from fastapi import FastAPI, Request
-app = FastAPI()
+import requests
+import base64
+import logging
+from requests.auth import HTTPBasicAuth
+from datetime import datetime, timedelta
+import os
 
-@app.post("/sms-consent")
-async def receive_sms(request: Request):
-    payload = await request.json()
-    if "CONSENT YES" in payload["message"]:
-        # Store consent to PySyft
-        ...
+# VAS2NETS API Configuration
+VAS2NETS_URL = "https://v2nmobile.com/api/push"
+VAS2NETS_SENDER_ID = ""
+VAS2NETS_USERNAME = ""
+VAS2NETS_PASSWORD = ""
+
+MESSAGE_TEXT = ""
+
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Basic {AUTH_TOKEN}"
+    }
+    sms_id = str(uuid.uuid4())
+    payload = {
+        "sms": [
+            {
+                "id": sms_id,
+                "receiver": phone_number,
+                "sender": VAS2NETS_SENDER_ID,
+                "message": MESSAGE_TEXT,
+                "type": "sms"
+            }
+        ]
+    }
+    logging.info(f"Sending SMS to: {phone_number}")
+    try:
+        response = requests.post(VAS2NETS_URL, json=payload, headers=headers)
+        response.raise_for_status()
+        logging.info(f"SMS sent successfully: {response.json()}")
+    except requests.RequestException as e:
+        logging.error(f"Failed to send SMS to {phone_number}: {e}")
 ```
 
 ---
